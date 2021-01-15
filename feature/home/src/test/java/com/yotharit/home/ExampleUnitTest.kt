@@ -1,4 +1,4 @@
-package com.yotharit.afterthursday
+package com.yotharit.home
 
 import org.junit.Test
 

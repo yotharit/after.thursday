@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
@@ -7,19 +7,15 @@ android {
     buildToolsVersion DefaultConfig.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.yotharit.afterthursday"
         minSdkVersion DefaultConfig.minSdk
         targetSdkVersion DefaultConfig.targetSdk
         versionCode Releases.versionCode
         versionName Releases.versionName
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            minifyEnabled true
         }
     }
 
@@ -38,10 +34,8 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation Libs.kotlin_stdlib_jdk7
     implementation Libs.core_ktx
-    implementation Libs.app_compat
     testImplementation Libs.junit
     androidTestImplementation Libs.android_junit
     androidTestImplementation Libs.espresso
