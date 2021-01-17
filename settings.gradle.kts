@@ -1,6 +1,6 @@
-include(":feature:home")
 include(
     ":app",
-    ":feature:home"
+    ":feature:home",
+    ":feature:concept"
 )
 rootProject.name = "After.Thursday"
