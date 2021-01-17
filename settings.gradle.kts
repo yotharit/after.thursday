@@ -5,6 +5,7 @@ include(
     ":feature:experiences",
     ":feature:project",
     ":feature:contact",
-    ":base:presentation"
+    ":base:presentation",
+    ":base:utilities"
 )
 rootProject.name = "After.Thursday"
