@@ -1,6 +1,3 @@
-# After Thursday
-
-
 ![alt text](./readme_resources/icon.svg "after.thursday")
 
 after.thursday.
